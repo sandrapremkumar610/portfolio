@@ -995,56 +995,26 @@ button, input, textarea {
 }
 
 .about-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-  align-items: center;
+  display: block;
   position: relative;
   z-index: 1;
-}
-
-@media (min-width: 992px) {
-  .about-grid {
-    grid-template-columns: 1fr 1.6fr;
-    gap: 3.5rem;
-  }
-}
-
-.about-portrait-card {
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  background-color: var(--white);
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-lg);
-}
-
-.about-portrait-img {
-  width: 100%;
-  height: auto;
-  max-height: 480px;
-  object-fit: cover;
-  object-position: top;
-}
-
-.about-portrait-caption {
-  padding: 1.25rem;
-  border-top: 1px solid var(--border-color);
-  background-color: var(--white);
+  max-width: 1000px;
 }
 
 .about-headline {
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--black);
-  line-height: 1.3;
+  line-height: 1.4;
   margin-bottom: 1.25rem;
 }
 
 .about-text {
   font-size: 1.05rem;
   color: var(--secondary);
-  line-height: 1.8;
+  line-height: 1.85;
   margin-bottom: 1.25rem;
+  text-align: left;
 }
 
 .about-text strong {
@@ -1054,13 +1024,14 @@ button, input, textarea {
 .competencies-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.75rem;
-  margin: 1.5rem 0;
+  gap: 0.85rem;
+  margin: 1.75rem 0;
 }
 
 @media (min-width: 576px) {
-  competencies-grid {
-    grid-template-columns: 1fr 1fr;
+  .competencies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 1.5rem;
   }
 }
 
@@ -2040,54 +2011,4 @@ button, input, textarea {
   * {
     box-shadow: none !important;
   }
-  
-/* About Section - Full Width After Removing Image */
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    width: 100%;
-}
-
-/* About Heading */
-.about-headline {
-    max-width: 900px;
-    line-height: 1.4;
-    margin-bottom: 20px;
-}
-
-/* About Paragraph */
-.about-text {
-    max-width: 950px;
-    font-size: 1.05rem;
-    line-height: 1.9;
-    text-align: justify;
-    margin-bottom: 20px;
-    color: var(--secondary);
-}
-
-/* Competencies */
-.competencies-grid {
-    margin-top: 25px;
-}
-
-/* Languages */
-.languages-row {
-    margin-top: 25px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .about-text {
-        max-width: 100%;
-        font-size: 0.98rem;
-        line-height: 1.8;
-        text-align: left;
-    }
-}
-
 }
