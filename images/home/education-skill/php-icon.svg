@@ -1,0 +1,5 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="70" height="70" rx="16" fill="#F0F4F8"/>
+  <ellipse cx="35" cy="35" rx="27" ry="16" fill="#777BB4"/>
+  <text x="35" y="41" font-family="'Courier New', monospace, sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle">php</text>
+</svg>
