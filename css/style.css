@@ -2040,4 +2040,54 @@ button, input, textarea {
   * {
     box-shadow: none !important;
   }
+
+/* About Section - Full Width After Removing Image */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: 100%;
+}
+
+/* About Heading */
+.about-headline {
+    max-width: 900px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* About Paragraph */
+.about-text {
+    max-width: 950px;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: var(--secondary);
+}
+
+/* Competencies */
+.competencies-grid {
+    margin-top: 25px;
+}
+
+/* Languages */
+.languages-row {
+    margin-top: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text {
+        max-width: 100%;
+        font-size: 0.98rem;
+        line-height: 1.8;
+        text-align: left;
+    }
+}
+
 }
